@@ -2,7 +2,23 @@
 
 
 
-A Java-based academic appointment management system that facilitates appointment scheduling between students and instructors.
+A Java-based desktop application designed to simplify appointment management between students and instructors.
+
+
+
+\## Overview
+
+
+
+The Academic Appointment System provides a digital platform for managing academic appointments between students and instructors.
+
+
+
+Students can view available appointment times, send appointment requests, and track responses. Instructors can manage their availability, review incoming appointment requests, and respond to students.
+
+
+
+The system also provides email notifications to keep users informed about appointment-related updates.
 
 
 
@@ -10,21 +26,23 @@ A Java-based academic appointment management system that facilitates appointment
 
 
 
-\- Student and instructor registration and login
+\- User registration and authentication
 
-\- Appointment requests between students and instructors
+\- Student and instructor role-based access
 
-\- Instructor availability scheduling
+\- Instructor availability management
 
-\- Appointment request management
+\- Appointment request creation
 
-\- Appointment response tracking
+\- Appointment request review and response
+
+\- Appointment status tracking
 
 \- Email notifications
 
 \- SQLite database integration
 
-\- Java Swing desktop interface
+\- Desktop graphical user interface
 
 
 
@@ -34,7 +52,9 @@ A Java-based academic appointment management system that facilitates appointment
 
 \### Student
 
-\- Log in to the system
+
+
+\- Register and log in to the system
 
 \- View available appointment times
 
@@ -46,9 +66,11 @@ A Java-based academic appointment management system that facilitates appointment
 
 \### Instructor
 
-\- Log in to the system
 
-\- Define available appointment times
+
+\- Register and log in to the system
+
+\- Add and manage available appointment times
 
 \- View incoming appointment requests
 
@@ -60,85 +82,69 @@ A Java-based academic appointment management system that facilitates appointment
 
 
 
-\- Java 21
+| Technology | Purpose |
 
-\- Java Swing
+| --- | --- |
 
-\- Java AWT
+| Java 21 | Core programming language |
 
-\- SQLite
+| Java Swing | Desktop graphical user interface |
 
-\- JDBC
+| Java AWT | GUI components and functionality |
 
-\- Jakarta Mail
+| SQLite | Database management |
 
-\- Eclipse IDE
+| JDBC | Database connectivity |
 
+| Jakarta Mail | Email notifications |
 
-
-\## Screenshots
-
-
-
-\### Login
+| Eclipse IDE | Development environment |
 
 
 
-!\[Login](ekran\_goruntuleri/giriş\_sayfası.png)
+\## Database
 
 
 
-\### Registration
+The application uses SQLite for persistent data storage. Database connectivity is implemented using JDBC.
 
 
 
-!\[Registration](ekran\_goruntuleri/kayıt\_sayfası.png)
+\## Email Notifications
 
 
 
-\### Student Panel
+The system integrates Jakarta Mail to send email notifications related to the appointment process, helping users stay informed about appointment-related updates.
 
 
 
-!\[Student Panel](ekran\_goruntuleri/ogrenci\_işlem\_seçmesi.png)
+\## Project Structure
 
 
 
-\### Appointment Request
+```text
 
+Academic-Appointment-System/
 
+├── src/
 
-!\[Appointment Request](ekran\_goruntuleri/ogrenci\_talep\_gondermesi.png)
+├── screenshots/
 
+├── randevu.db
 
+├── rapor.pdf
 
-\### Instructor Panel
+├── email\_logo.png
 
+├── gelenkutu.png
 
+├── icon.png
 
-!\[Instructor Panel](ekran\_goruntuleri/hoca\_işlem\_seçmesi.png)
+├── takvim.png
 
+├── talep.png
 
+├── .gitignore
 
-\### Available Appointment Times
-
-
-
-!\[Available Times](ekran\_goruntuleri/hoca\_saat\_belirlemesi.png)
-
-
-
-\### Incoming Appointment Requests
-
-
-
-!\[Incoming Requests](ekran\_goruntuleri/hocaya\_gelen\_talepler.png)
-
-
-
-\### Appointment Response
-
-
-
-!\[Appointment Response](ekran\_goruntuleri/ogrenciye\_gelen\_cevap.png)
+└── README.md
 
